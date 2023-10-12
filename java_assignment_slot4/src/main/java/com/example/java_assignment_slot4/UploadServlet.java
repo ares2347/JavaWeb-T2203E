@@ -40,9 +40,7 @@ public class UploadServlet extends HttpServlet {
 
         Part filePart = request.getPart("file");
         String fileName = filePart.getSubmittedFileName();
-        for (Part part : request.getParts()) {
-            part.write("D:\\temp\\" + fileName);
-        }
+        filePart.write("D:\\temp\\" + fileName);
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
         out.println("<h1>Upload file here</h1>");
