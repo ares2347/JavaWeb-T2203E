@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1>Add new student</h1>
-<form method='post' action='${pageContext.request.contextPath}/list-student'>");
+<form method='post' action='${pageContext.request.contextPath}/list-student'>
 <input name='name' type='text'/>
 <input name='birthyear' type='number' min='1900' max='2099' step='1'/>
 <input name='phone' type='tel'/>
